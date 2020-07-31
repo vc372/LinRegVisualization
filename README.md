@@ -1,16 +1,16 @@
 # Linear Regression Visualization 
 
-A project that [visualizes linear regression](https://lin-reg-visualization.herokuapp.com/) using the Ames Housing Dataset from Kaggle. 
+A project that [visualizes linear regression](https://lin-reg-visualization.herokuapp.com/) using the [Ames Housing Dataset from Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data). 
 
 ## Motivation 
 
-The purpose of this project was to better visualize single variable linear regression wtih [gradient descent](https://en.wikipedia.org/wiki/Gradient_descent). This process is depicted by showing the transition from a random line to the line of best fit, while simultaneously graphing the associated cost of the current state state of the line. Cost is defined as the [mean squared error](https://en.wikipedia.org/wiki/Mean_squared_error) of each line. 
-
-![linreg_vis_demo](https://user-images.githubusercontent.com/62442387/89074805-0a7a0c00-d34b-11ea-8dd9-ca5e7f189e97.gif)
+The purpose of this project was to better visualize single variable linear regression with [gradient descent](https://en.wikipedia.org/wiki/Gradient_descent). This process is depicted by showing the transition from a random line to the line of best fit, while simultaneously graphing the associated cost of the current state of the line. Cost is defined by [mean squared error](https://en.wikipedia.org/wiki/Mean_squared_error). 
 
 ## Features 
 
-This project features an interactive heat map that maps the top ten most coorelated variables with sales price. Clicking on a cell of the heat map graphs the associated x and y variables, and runs the linear regression animation by running the gradient descent algorithm, and graphs the associated weights after each iteration. The data has been feature scaled to improve performance. 
+This project features an interactive heat map that maps the top ten most coorelated variables with sales price. Clicking on a cell of the heat map graphs the associated x and y variables, and runs the linear regression animation by running the gradient descent algorithm, and graphs the associated weights after each iteration. The data has been scaled to improve performance. 
+
+![linreg_vis_demo](https://user-images.githubusercontent.com/62442387/89074805-0a7a0c00-d34b-11ea-8dd9-ca5e7f189e97.gif)
 
 The project also features sliders for parameter tuning. The user can toggle the learning rate of the model, and the max allowable iterations. Execution time of the program, and R-squared of the line is provided to help a user determine the optimal learning rate and max allowable iterations. In this way, users are able to decide tradeoffs between accuracy (R-squared), and performance (execution time).
 
